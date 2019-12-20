@@ -338,6 +338,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -346,7 +347,26 @@ button {
     -ms-flex-pack: center;
     justify-content: center;
 }
-
+.reasons .reason .square .square-bg1{
+    width: 55px; 
+    height: 34px;
+    background: url('../img/css_sprites.png') -143px -90px;
+}
+.reasons .reason .square .square-bg2{
+    width: 45px; 
+    height: 45px;
+    background: url('../img/css_sprites.png') -78px -90px;
+}
+.reasons .reason .square .square-bg3{
+    width: 39px; 
+    height: 57px;
+    background: url('../img/css_sprites.png') -10px -158px;
+}
+.reasons .reason .square .square-bg4{
+    width: 48px; 
+    height: 48px;
+    background: url('../img/css_sprites.png') -10px -90px;
+}
 .reasons .reason .square img {
     width: 45px;
     height: auto;
@@ -531,7 +551,29 @@ button {
     margin-bottom: 50px;
     clear: both;
 }
+.advantages .adv{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
+}
+.advantages .adv-bg1{
+    width: 55px; 
+    height: 60px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+.advantages .adv-bg2{
+    width: 55px; 
+    height: 60px;
+    background: url('../img/css_sprites.png') -85px -10px;
+}
+.advantages .adv-bg3{
+    width: 60px; 
+    height: 54px;
+    background: url('../img/css_sprites.png') -160px -10px;
+}
 .advantages .adv-title {
     margin-top: 15px;
     font-family: "HelveticaNeueBold";
