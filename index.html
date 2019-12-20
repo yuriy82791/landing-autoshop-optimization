@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
@@ -168,7 +169,47 @@
     <div class="wrapper">
         <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
         <img src="img/arrow-left.png" alt="" class="arrow-left">
-        <div class="review-slider">
+        <div class="review-slider owl-carousel">
+            <div class="slide">
+                <img src="img/review1.jpg" alt="" class="main-review-img">
+                <p class="review-text">
+                    Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                    дизайн
+                    уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                    года
+                    вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                    данные
+                    никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                    наткнулся на
+                    то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                    восторге от
+                    данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                    зеркало
+                    любой машины, вообщем то что доктор прописал!
+                </p>
+                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                    Днепропетровск</i></div>
+            </div>
+            <div class="slide">
+                <img src="img/review1.jpg" alt="" class="main-review-img">
+                <p class="review-text">
+                    Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                    дизайн
+                    уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                    года
+                    вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                    данные
+                    никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                    наткнулся на
+                    то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                    восторге от
+                    данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                    зеркало
+                    любой машины, вообщем то что доктор прописал!
+                </p>
+                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                    Днепропетровск</i></div>
+            </div>
             <div class="slide">
                 <img src="img/review1.jpg" alt="" class="main-review-img">
                 <p class="review-text">
@@ -272,47 +313,7 @@
     </div>
 </footer>
 <script src="lib/plugins.js"></script>
-<script>
-    // 2. This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement('script');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('video', {
-            height: '390',
-            width: '640',
-            videoId: 'M7lc1UVf-VE',
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
-
-    // 4. The API will call this function when the video player is ready.
-    function onPlayerReady(event) {
-        event.target.playVideo();
-    }
-
-    // 5. The API calls this function when the player's state changes.
-    //    The function indicates that when playing a video (state=1),
-    //    the player should play for six seconds and then stop.
-    var done = false;
-    function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-            setTimeout(stopVideo, 6000);
-            done = true;
-        }
-    }
-    function stopVideo() {
-        player.stopVideo();
-    }
-</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
